@@ -17,8 +17,8 @@ export default {
 </script>
 
 <template>
-  <li v-click v-motion :duration="250" :initial="{ x: 200 }" :enter="{ x: 0 }">
-    <div class="h-10 flex gap-5 items-center justify-between">
+  <li v-click v-motion :duration="250" :initial="{ x: 200 }" :enter="{ x: 0 }" class="ListItem">
+    <div class="flex gap-5 items-center justify-between">
       <span v-html="renderedLabel"></span>
       
       <span v-if="link && image" class="grow h-1 border-be border-dashed border-current opacity-30"></span>
@@ -31,3 +31,16 @@ export default {
     </div>
   </li>
 </template>
+
+
+
+<style>
+  .ListItem {
+    p {
+      margin: 0;
+      padding: 0;
+    }
+
+    margin-block-end: 5px;
+  }
+</style>

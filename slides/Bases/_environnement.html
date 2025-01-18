@@ -1,0 +1,392 @@
+---
+layout: center
+transition: slide-up
+class: text-center
+---
+
+<h1 class="!text-6xl">2. L'environnement Web</h1>
+
+<SlideFooter/>
+
+---
+layout: default
+transition: slide-up
+---
+
+<h1>Qu'est ce qu'une application Web ? </h1>
+
+<p>Une application Web est un programme informatique conçu pour être exécuté par un navigateur internet. Il peux s'agir d'un site vitrine simple, d'une site e-commerce plus complexe, d'une application mobile ou d'un outils de gestion d'entreprise par exemple.</p>
+
+<p>Les applications Web sont en général composées de 2 parties bien distinctes : </p>
+
+<SlideFooter/>
+
+---
+layout: default
+transition: slide-up
+---
+
+<h1>Le Front-End </h1>
+<h2 text-light>ou "côté client"</h2>
+
+<div flex gap-10>
+<div>
+  <p v-click><u block>C'est tout ce que l'utilisateur voit :</u> Le design, les animations, les graphiques, etc.</p>
+  <p v-click>Avec la montée en puissances des frameworks JS, de plus en plus de tâches sont confiées au Front-End pour des apllications plus rapide et plus fluides mais toujours plus gourmandes en ressources.</p>
+  <p v-click>Les languages employés côté Front-End sont : <b>HTML</b>, <b>CSS</b> ET <b>JavaScript</b>.</p>
+  <p v-click>Le développeur Front-End à également la responsabilité du <b>SEO</b>, de la <b>WebPerf</b> et de l'<b>accessibilité</b>.</p>
+  <Alert v-click type="warning" title="Attention !" text="Quels que soient les technologies utilisées pour le développement, le code devra être compilé afin d'être compris et interprétés par les navigateurs Web !"/>
+</div>
+
+<img v-after shrink-0 block src="/front-end.jpg" alt="Front-End" width="300px">
+</div>
+
+<SlideFooter/>
+
+
+---
+layout: default
+transition: slide-up
+---
+
+<h1>Le Back-End </h1>
+<h2 text-light>ou "côté serveur"</h2>
+
+<div flex gap-10>
+<div>
+  <p v-click><u block>C'est tout ce que l'utilisateur ne voit pas :</u> Les requêtes vers la ou les bases de données, les API, l'authentification, etc.</p>
+  <p v-click>Les utilisateurs n'interviennent pas directement sur le code Back-End, mais leurs actions peuvent déclencher des appels vers le Back.</p>
+  <p v-click></p>
+  <Alert v-click type="information" title="Important !" text="Contrairement au Front-End, il n'y a aucune limitation de language pour le développement Back-End puisque le code sera exécuté par le serveur : **NodeJS**, **PHP**, **Java**, **.Net**, **C#**, **Python**, **Ruby**, **etc...**" />
+</div>
+
+<img v-after shrink-0 block src="/back-end.jpg" alt="Front-End" width="300px">
+</div>
+
+<SlideFooter/>
+
+
+---
+layout: default
+transition: slide-up
+---
+
+<h1>En résumé</h1>
+
+<img src="/front-vs-back.jpg" alt="" width="450px" mx-auto>
+
+<div grid grid-cols-2 gap-2 items-center>
+  <div v-click is-full>
+    <h2 text-center text-primary>Front-End</h2>
+    <p>Le Front-End est responsable de <b>l'expérience utilisateur</b>. Il doit proposer des interfaces responsives, performantes et accessibles.</p>
+  </div>
+  <div v-click is-full>
+    <h2 text-center text-primary>Back-End</h2>
+    <p>Le Back-End est responsable de la qualité de la donnée qui sera affichée au client, de la rapidité des temps de réponse, de la sécutité, etc.</p>
+  </div>
+</div>
+
+<div v-click flex>
+  <Alert type="information" title="Important !" text="Les deux sont aussi indispendsables l'un que l'autre au bon fonctionnement d'une applicaiton Web et se doivent de communiquer entre eux de manière efficace."/>
+</div>
+
+<SlideFooter/>
+
+
+---
+layout: image-right
+image: code.jpg
+transition: slide-up
+---
+
+<h1>En résumé</h1>
+
+<p>Bien que souvent, le <b>Front-End</b> et le <b>Back-End</b> soit tous les deux au sein du même projet (un seul dépot pour toute la code base), Il est de plus en plus fréquent qu'il soit séparés et gérés par des équipes totalement différentes.</p>
+
+<p v-click>Ainsi, un site web peut tout à fait avoir un <b>Front-End</b> qui se connecte à un ou plusieurs <b>Back-End</b> via des <b>API</b>, ou qu'un meme <b>Back-End</b> serve plusieurs <b>Front-End</b> différents.</p>
+
+<p v-click>On parle alors d'architecture <b>M.A.C.H</b> pour <b>M</b>icroservices, <b>A</b>PI, <b>C</b>loud et <b>H</b>eadless : Au lieu de créer une grosse application monolythique, on va créer plusieurs petites briques indépendantes.</p>
+
+<SlideFooter/>
+
+
+---
+layout: default
+transition: slide-up
+---
+
+<h1>Les protocoles</h1>
+
+<p>Comme on l'a vu précédemment, pour qu'une application web fonctionne,<br/>il faut que le <b>Front-End</b> et le <b>Back-End</b> puissent communiquer.</p>
+
+<b text-xl>Voici un exemple concret :</b>
+
+<ul mis-10 mbs->
+  <ListItem label="Un utilisateur tape une recherche sur le site de **Google**."/>
+  <ListItem label="Lorsqu'il appuie sur entrée, un requête est envoyée au serveur de **Google**"/>
+  <ListItem label="En plus de la recherche, la requête va contenir des informations sur l'utilisateur (langue, géoloc, etc.)"/>
+  <ListItem label="Le serveur va chercher la réponse dans ses différentes bases de données"/>
+  <ListItem label="Puis il va compiler toutes ces données pour formuler une réponse qu'il retourne au client"/>
+  <ListItem label="Le client affiche la réponse qu'il à reçu."/>
+</ul>
+
+<div v-click mbs-5>
+  <Alert type="information" title="Bon à savoir !" text="Une page web est constituée de plusieurs éléments distants comme des **images**, des **polices**, des fichiers **CSS** et **JS**, etc. Pour chacun de ces éléments une requête est envoyée à un ou plusieurs serveurs.<br/>Votre navigateur envoie constament un grand nombre de requêtes lors de son utilisation."/>
+</div>
+
+<SlideFooter/>
+
+
+---
+layout: default
+transition: slide-up
+---
+
+<h1>Le protocole HTTP</h1>
+<h2 text-light>(HyperText Transfer Protocol)</h2>
+
+<p>Le <b>HTTP</b> est l’un des protocoles les plus fondamentaux et les plus utilisés dans le web. Il permet la communication entre un <b>client</b> (généralement un navigateur) et un <b>serveur web</b>.</p>
+
+<div mbs-10>
+  <p v-click><b>HTTP</b> est un protocole basé sur un modèle <b>requête-réponse</b> :</p>
+</div>
+
+<ol mis-5>
+  <li v-click><b>Requête</b> : Le <b>client</b> envoie une requête au serveur.</li>
+  <li v-click><b>Réponse</b> : Le <b>serveur</b> traite la requête et renvoie une réponse, souvent sous forme de page <b>HTML</b>, de donnée au format <b>JSON</b>, ou de <b>fichier</b>.</li>
+</ol>
+
+<SlideFooter/>
+
+
+---
+layout: default
+transition: slide-up
+---
+
+<h1>Structure d’une requête HTTP</h1>
+
+<p>Une requête HTTP est composée de plusieurs éléments :</p>
+
+<ol mbs-5 mis-5>
+  <li v-click mbs-5 flex flex-col>
+    <b class="-mis-5">Ligne de requête</b>
+    <ul>
+      <li>l'<b>URL</b> (chemin d'accès du serveur qu'on cherche à joindre).</li>
+      <li>la <b>methode</b> (<kbd>GET</kbd>, <kbd>POST</kbd>, <kbd>DELETE</kbd>, etc.) pour dire au serveur ce qu'on souhaite faire.</li>
+    </ul>
+  </li>
+
+  <li v-click mbs-5 flex flex-col>
+    <b class="-mis-5">L'en-têtes ou Headers</b>
+    <span>Fournissent des métadonnées sur la requête (<b>la langue</b>, <b>le type de contenu</b>, <b>des informations sur l'utilisateur</b>, etc.)</span>
+  </li>
+
+  <li v-click mbs-5 flex flex-col>
+    <b class="-mis-5">Le Corps ou Body (optionnel)</b>
+    <span>Contient des données supplémentaires, souvent utilisées avec les méthodes comme <kbd>POST</kbd> ou <kbd>PUT</kbd></span>
+  </li>
+</ol>
+
+<SlideFooter/>
+
+
+---
+layout: default
+transition: slide-up
+---
+
+<h1>Les méthodes HTTP</h1>
+
+<p>Les méthodes définissent l’action que le client souhaite effectuer sur le serveur :</p>
+
+<ul mis-5 my-5>
+  <ListItem label="<kbd>GET</kbd> : Récupérer une ressource (lecture seule)"/>
+  <ListItem label="<kbd>POST</kbd> : Envoyer des données au serveur"/>
+  <ListItem label="<kbd>PUT</kbd> : Créer ou mettre à jour une ressource"/>
+  <ListItem label="<kbd>DELETE</kbd> : Supprimer une ressource"/>
+</ul>
+
+<p v-click>D'autres méthodes existent mais sont très peu utilisée, comme :</p>
+
+<ul mis-5 my-5>
+  <ListItem label="<kbd>HEAD</kbd> : Récupérer uniquement les métadonnées d'une ressource."/>
+  <ListItem label="<kbd>OPTIONS</kbd> : Vérifier les methodes disponibles pour une ressource."/>
+  <ListItem label="<kbd>PATCH</kbd> : Mettre à jour partiellement une ressource."/>
+</ul>
+
+<SlideFooter/>
+
+
+---
+layout: default
+transition: slide-up
+---
+
+<h1>Structute d'une réponse HTTP</h1>
+
+<p>Une réponse HTTP comprend :</p>
+
+<ol mbs-5 mis-5>
+  <li v-click mbs-5 flex flex-col>
+    <b class="-mis-5">Ligne détat</b>
+    <span>Contient la version du protocole, un code de statut et un message. Exemple : <kbd>HTTP/1.1 200 OK</kbd></span>
+  </li>
+
+  <li v-click mbs-5 flex flex-col>
+    <b class="-mis-5">L'en-têtes ou Headers</b>
+    <span>Fournissent des informations sur la réponse, comme le type de contenu, la taille, ou des informations de cache. Exemple : <kbd>Content-Type: text/html; charset=UTF-8</kbd></span>
+  </li>
+
+  <li v-click mbs-5 flex flex-col>
+    <b class="-mis-5">Le Corps ou Body (optionnel)</b>
+    <span>Contient les données demandées (<b>HTML</b>, <b>JSON</b>, <b>image</b>, etc.).</span>
+  </li>
+</ol>
+
+<SlideFooter/>
+
+
+---
+layout: default
+transition: slide-up
+---
+
+<h1>Les codes de statut HTTP</h1>
+
+<p>Les codes de statut indiquent le résultat de la requête :</p>
+
+
+<div flex gap-4 justify-between>
+
+<ul>
+  <li v-click mbs-5 flex flex-col>
+    <b class="-mis-5">1xx : Information</b>
+    <span><kbd>100 Continue</kbd> : La requette peut continuer.</span>
+  </li>
+
+  <li v-click mbs-5 flex flex-col>
+    <b class="-mis-5">2xx : Succès</b>
+    <span><kbd>200 OK</kbd> : La requette à réussie.</span>
+    <span><kbd>201 Created</kbd> : La ressource à été créée.</span>
+  </li>
+
+  <li v-click mbs-5 flex flex-col>
+    <b class="-mis-5">3xx : Redirections</b>
+    <span><kbd>301 Moved Permanently</kbd> : URL déplacée de façon permanente.</span>
+    <span><kbd>302 Found</kbd> : Redirection temporaire.</span>
+  </li>
+</ul>
+
+
+<ul>
+  <li v-click mbs-5 flex flex-col>
+    <b class="-mis-5">4xx : Erreurs côté client</b>
+    <span><kbd>400 Bad Request</kbd> : La requette est mal formulée.</span>
+    <span><kbd>401 Unauthorized</kbd> : L'authentification est nécessaire.</span>
+    <span><kbd>404 Not Found</kbd> : La ressource demandée est introuvable.</span>
+  </li>
+
+  <li v-click mbs-5 flex flex-col>
+    <b class="-mis-5">5xx : Erreurs côté serveur</b>
+    <span><kbd>500 Internal Server Error</kbd> : Erreur interne au serveur.</span>
+    <span><kbd>503 Service Unavailable</kbd> : Serveur temporairement indisponible.</span>
+  </li>
+</ul>
+</div>
+
+<SlideFooter/>
+
+
+---
+layout: default
+transition: slide-up
+---
+
+<h1>Les version d'HTTP</h1>
+
+<ol>
+  <li v-click mbe-3>
+    <b>HTTP/0.9 <small>(1991)</small></b>
+    <ul mis-5>
+      <li>Première version du protocole <b>HTTP</b>, très simple et minimaliste</li>
+      <li>Limité à des requêtes <kbd>GET</kbd> pour récupérer des fichiers <b>HTML</b> uniquement.</li>
+      <li>Aucune en-tête, ni statut, ni métadonnées.</li>
+    </ul>
+  </li>
+
+  <li v-click mbe-3>
+    <b>HTTP/1.0 <small>(1996)</small></b>
+    <ul mis-5>
+      <li>Support des en-têtes pour inclure des métadonnées (comme Content-Type)</li>
+      <li>Introduction des codes de statut (ex. : 200, 404).</li>
+      <li>Chaque requête ouvre une nouvelle connexion.</li>
+    </ul>
+  </li>
+
+  <li v-click mbe-3>
+    <b>HTTP/1.1 <small>(1997)</small></b>
+    <ul mis-5>
+      <li>Prend en charge les connexions persistantes (réutilisation des connexions).</li>
+      <li>Ajout de nouvelles méthodes (comme <kbd>OPTIONS</kbd>, <kbd>PUT</kbd>, et <kbd>DELETE</kbd>).</li>
+      <li>Introduction de la gestion de cache avec des en-têtes comme <kbd>Cache-Control</kbd></li>
+    </ul>
+  </li>
+</ol>
+
+<SlideFooter/>
+
+
+---
+layout: default
+transition: slide-up
+---
+
+<h1>Les version d'HTTP</h1>
+
+<ol start="4">
+  <li mbe-3>
+    <b>HTTP/2 <small>(2015)</small></b>
+    <ul mis-5>
+      <li>Multiplexage des requêtes : plusieurs requêtes/réponses simultanées sur une seule connexion TCP.</li>
+      <li>Compression des en-têtes HTTP pour réduire la bande passante.</li>
+      <li>Priorisation des ressources pour optimiser les performances.</li>
+    </ul>
+  </li>
+
+  <li v-click mbe-3>
+    <b>HTTP/3 <small>(2022)</small></b>
+    <ul mis-5>
+      <li>Basé sur <kbd>UDP</kbd> au lieu de <kbd>TCP</kbd>.</li>
+      <li>Réduction des temps de latence grâce à une connexion plus rapide et résiliente.</li>
+      <li>Conçu pour améliorer les performances des applications en temps réel (streaming, jeux, etc.).</li>
+      <li>Uniquement en <b>HTTPS</b></li>
+    </ul>
+  </li>
+</ol>
+
+<SlideFooter/>
+
+
+---
+layout: default
+transition: slide-left
+---
+
+<h1>La sécurité avec HTTPS</h1>
+
+<p><b>HTTPS</b> (HyperText Transfer Protocol Secure) ajoute une couche de sécurité à <b>HTTP</b> grâce au chiffrement des données via <kbd>TLS/SSL</kbd>.</p>
+
+<p v-click>Les connexions <b>HTTPS</b> reposent sur un certificat de chiffrement et protègent contre les attaques de type interception <i>(man-in-the-middle)</i>. Seuls le <b>client</b> et le <b>serveur</b> connaissent la clé qui permet de déchiffrer les données.</p>
+
+<p v-after><b>HTTPS</b> garantie m'intégrité et la confidentialité des données échangées</p>
+
+<div v-click flex mbs-10>
+  <Alert type="danger" title="Attention !" text="**HTTPS** est devenu la norme sur internet. 99% des sites utilisent ce protocole sécurisé et les navigateurs vous mettrons en garde si vous tentez d'accéder à un site en **HTTP**."/>
+</div>
+
+<div v-click flex mbs-5>
+  <Alert type="idea" title="Astuce !" text="Pour s'assurer que vous êtes biens sur un site sécurisé, pensez à vérifier l'url complète, elle doit commencer par <kbd>https://</kbd>. <br/>Un clique sur l'icone vous donnera des informations sur le protocole utilisé."/>
+</div>
+
+<SlideFooter/>

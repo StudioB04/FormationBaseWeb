@@ -42,11 +42,16 @@ src: ./slides/accueil.html
 # <span v-mark.red="3"><code>v-mark</code> directive</span>
 
 --- 
-title: Introcuction
+title: Introduction
 src: ./slides/Introduction/index.html
 ---
 
----
-title: Jour 1
+--- 
+title: Programme jour 1
 src: ./slides/Programme/jour-1.html
+---
+
+--- 
+title: Les bases
+src: ./slides/Bases/index.html
 ---

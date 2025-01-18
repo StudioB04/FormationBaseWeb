@@ -1,0 +1,95 @@
+---
+layout: center
+transition: slide-up
+class: text-center
+---
+
+<h1 class="!text-6xl">1. Présentation du projet</h1>
+<h2 text-lighter>Un portail sur le cinéma</h2>
+
+
+<SlideFooter/>
+
+---
+layout: default
+transition: slide-up
+---
+
+<h1>Le projet</h1>
+
+<div flex gap-5 mis-3>
+
+<ul flex flex-col gap-1>
+  <ListItem label="Vous allez devoir vous répartir en **groupes de 2 ou 3 personnes**, pour concevoir un site web sur le cinéma."/>
+  <ListItem label="Le design est libre mais le site doit être responsif. Le design n'est pas ce qui compte ici, mais ça joue sur la perception de vos utilisateurs, alors soyez créatifs !"/>
+  <ListItem label="Votre projet devra être archecturé clairement, selon les design patterns que nous verrons pendant le module."/>
+  <ListItem label="Vous devrez créer un compte sur **[TMDB](https://developer.themoviedb.org/docs/getting-started)** pour vous connecter à leur **API** afin de récupérer les données nécéssaires."/>
+  <ListItem label="Vous êtres libres d'utiliser toutes les librairies que vous souhaitez mais vous devrez justifier votre choix."/>
+  <ListItem label="Vous devrez déposer votre projet sur un repo public sur Github et le documenter via le fichier **README.md**."/>
+</ul>
+
+<a href="https://mymoviesvelte.netlify.app" target="_blank" shrink-0 v-click="1" v-motion :initial="{ y: 100 }" :enter="{ y: 0 }">
+  <img src="/myMovie.jpg" alt="" style="width: 300px; height: 450px; object-fit: cover; object-position: top;">
+</a>
+
+</div>
+
+
+<SlideFooter/>
+
+---
+layout: default
+transition: slide-up
+---
+
+<h1>Attendu du projet</h1>
+
+<b>Votre site devra contenir au minimum :</b>
+
+<ul mbs-2 mis-5 flex flex-col gap-1>
+  <ListItem label="Un moteur de recherche"/>
+  <ListItem label="Une page de résultats de recherche avec des filtres et une pagination"/>
+  <ListItem label="Une page pour les films <small>(photos, videos, avis, résumé, etc)</small>" />
+  <ListItem label="Une page pour les acteurs et membre de l'équipe technique <small>(photo, biographie, filmographie, etc.)</small>"/>
+  <ListItem label="Une page d'erreur <small>(404, 503, etc)</small>"/>
+</ul>
+
+<b v-click>Vous devrez me remettre :</b>
+
+<ul mbs-2 mis-5 flex flex-col gap-1>
+  <ListItem label="Le lien du repo Github sur lequel le projet est déposé."/>
+  <ListItem label="Une documentation qui explique comment fonctionne votre projet et qui justifie les choix que vous avez fait."/>
+  <ListItem label="En bonus, vous pouvez héberger votre site sur un service comme [Netlify](https://netlify.com) ou [Vercel](https://vercel.com)."/>
+</ul>
+
+<SlideFooter/>
+
+
+---
+layout: default
+transition: slide-left
+---
+
+<h1>En bonus</h1>
+
+<p>Vous pouvez proposer autant d'autres features que vous souhaitez, comme par exemple :</p>
+
+<ul mbs-5 mis-5 flex flex-col gap-1>
+  <ListItem label="Un moteur de recherche pour les **séances en cours** dans un cinéma"/>
+  <ListItem label="Une page pour **écrire un avis** sur un film"/>
+  <ListItem label="Une page pour voir les **bandes-annonces** des films à venir"/>
+  <ListItem label="Un site multilangue"/>
+  <ListItem label="etc."/>
+</ul>
+
+
+
+<div v-click flex mbs-5>
+  <Alert type="information" title="Des points bonus !" text="Bien sûr, ces fonctionnalités ne sont pas obligatoires, mais elles peuvent vous permettre de gagner des points supplémentaires"/>
+</div>
+
+<div v-click flex mbs-5>
+  <Alert type="idea" title="Besoin d'aide ?" text="Je serais disponible pour vous aider et répondre à toutes vos questions lors de nos sessions de cours, ou par email à l'adresse **contact@studiob04.com**"/>
+</div>
+
+<SlideFooter/>

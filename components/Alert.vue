@@ -18,7 +18,7 @@
 
 <template>
   <blockquote :class="`Alert Alert--${type}`">
-    <header>
+    <header v-if="title">
       <carbon-idea v-if="type === 'idea'"/> 
       <carbon-checkmark v-if="type === 'success'"/> 
       <carbon-information v-if="type === 'information'"/> 
