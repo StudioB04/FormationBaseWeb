@@ -8,7 +8,6 @@
 
   * {
     text-decoration-thickness: 0.05em;
-    transform-origin: top left;
   }
 
   a {
@@ -70,8 +69,7 @@
   }
 }
 
-img {
-  height: auto !important;
-  object-fit: cover;
+img { 
+  object-fit: contain;
   object-position: top left;
 }
