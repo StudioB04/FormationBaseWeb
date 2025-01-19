@@ -47,8 +47,11 @@
     font-size: 14px;
   }
   blockquote {
-    border-inline-start-width: 5px;
-    padding-inline: 15px 10px; 
+    font-size: inherit;
+    padding-inline: 1em 0.75em; 
+    padding-block: .5em; 
+    border-inline-start-width: 0.35em;
+
     @apply bg-slate-100 border-slate-700;
 
     .text-success { @apply text-success;}
