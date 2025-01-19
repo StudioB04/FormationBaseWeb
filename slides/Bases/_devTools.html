@@ -14,3 +14,163 @@ transition: slide-up
 ---
 
 <h1>Les outils de développement</h1>
+
+<p>En tant que développeur, vous devrez être capable de comprendre et d'analyser le fonctionnement d'un application Web pour déceler les bugs et les corriger.</p>
+
+<p v-click>Les navigateurs embarquent des outils de développement pour aider les développeurs à diagnostiquer et optimiser leurs applications web. Le navigateur le plus utilisé et le plus pratique pour le développement est <b>Google Chrome</b> grâce aux <b>DevTools</b>.</p>
+
+<div v-click mbs-10>
+  <p>Pour accéder au <b>DevTools</b>, utilisez la combinaison de touche suivante :</p>
+  
+  <ul mis-5>
+    <li><b>sur Windows ou Linux :</b> <kbd>Ctrl + Shift + I</kbd> ou <kbd>F12</kbd> </li>
+    <li><b>sur Mac :</b> <kbd>Cmd + Option + I</kbd> </li>
+  </ul>
+</div>
+
+<SlideFooter/>
+
+---
+layout: default
+transition: slide-up
+---
+
+<h1>Vue d'ensemble des onglets des DevTools</h1>
+
+<ol>
+  <ListItem label="**Elements** : Explorer et modifier le DOM et le CSS <u>en direct</u>."/>
+  <ListItem label="**Console** : Permet d'exécuter du code **JavaScript**, afficher des messages et des logs" />
+  <ListItem label="**Sources** : Parcourir tous les fichiers sources qui constituent la page en cours." />
+  <ListItem label="**Network** : Surveiller les requêtes réseau **(HTTP)** et leur performance." />
+  <ListItem label="**Performance** : Analyser, et optimiser la **WebPerf** en surveillant les temps de chargement et d'exécution" />
+  <ListItem label="**Memory** : Identifier les fuites de mémoire." />
+  <ListItem label="**Application** : Gérer les données stockées localement **(localStorage, cookies, etc.)**." />
+  <ListItem label="**Security** : Vérifier les certificats et la sécurité des ressources." />
+  <ListItem label="**Lighthouse** : Générer un audit des performances, de l'accessibilité, et du SEO." />
+</ol>
+
+<div v-click flex mbs-5>
+  <Alert type="idea" title="Pratique !" text="Il est possible de trier les onglets selon vos préférences ou d'en ajouter de nouveau grâce à des Extensions **Chrome** !"/>
+</div>
+
+
+<p v-after>Passons en revue les principaux onglets</p>
+
+<SlideFooter/>
+
+---
+layout: image-right
+image: devTools/elements.png
+transition: slide-up
+---
+
+<h1>Elements</h1>
+
+<p>Cette page se divise en deux parties :</p>
+
+<ul mbs-5 mie-30>
+  <li v-click>Le <b>DOM (Document Object Model)</b>. C'est la structure <b>HTML</b> du document <u>en direct</u>.</li>
+  <li v-click mbs-15>Des outils pour manipuler les <b>styles CSS</b>, les propriétés, les attributs d'accessibilité, etc.</li>
+</ul>
+
+<Arrow v-click="1" x1="300" y1="190" x2="500" y2="150" color="var(--primary-500)" />
+<Arrow v-click="2" x1="300" y1="360" x2="500" y2="430" color="var(--primary-500)" />
+
+<a v-click mbs-10 inline-block href="https://www.mydigitalschool.com/" target="_blank">Demonstration</a>
+
+<SlideFooter/>
+
+---
+layout: image-right
+image: devTools/console.png
+transition: slide-up
+---
+
+<h1>Console</h1>
+
+<p>La <b>Console</b> permet de manipuler le code <b>JavaScript</b> du document. et d'afficher les messages de logs</p>
+
+<p v-click>Les messages sont triés en fonction de leur types : <b>Messages</b>, <b>Erreurs</b>, <b>Warnings</b>, <b>Info</b> et <b>Verbose</b>.</p>
+
+<a v-click mbs-10 inline-block href="https://www.mydigitalschool.com/" target="_blank">Demonstration</a>
+
+<SlideFooter/>
+
+---
+layout: image-right
+image: devTools/network.png
+transition: slide-up
+---
+
+<h1>Network</h1>
+
+<p>L'onglet <b>Network</b> vous permet de voir toutes les requêtes <b>HTTP envoyées par l'application</b>.</p>
+
+<p v-click>Il est possible de trier les requêtes par type, et de voir le détail pour chaque requête (la durée, le statut, la taille de la resource, etc.).</p>
+
+
+<a v-click mbs-30 inline-block href="https://www.mydigitalschool.com/" target="_blank">Demonstration</a>
+
+<SlideFooter/>
+
+---
+layout: image-right
+image: devTools/application.png
+transition: slide-up
+---
+
+<h1>Application</h1>
+
+<p>L'onglet <b>Application</b> vous permet de voir tout ce qui est enregistré par l'application sur l'ordinateur&nbsp;: les <b>cookies</b>, le <b>Local Storage</b>, le <b>Session Storage</b>, etc.</p>
+<Arrow x1="260" y1="180" x2="500" y2="190" color="var(--primary-500)" />
+
+<div v-click mbs-20>
+  <p>Il affiche également les services tels que les <b>Notification Push</b>, le <b>cache</b>, etc.</p>
+</div>
+<Arrow v-click="1" x1="320" y1="310" x2="500" y2="390" color="var(--primary-500)" />
+
+
+<a v-click mbs-20 inline-block href="https://www.mydigitalschool.com/" target="_blank">Demonstration</a>
+
+<SlideFooter/>
+
+---
+layout: image-right
+image: devTools/performance.png
+transition: slide-up
+---
+
+<h1>Performance</h1>
+
+<p>L'onglet <b>Performance</b> permet d'auditer la performance d'une page Web en identifiant par exemple les resources trop lourdes, les goulots d'étranglement, etc.</p>
+
+<p v-click>La performance est présenté via les <b>WebCoreVitals</b> de <b>Google</b> qui sont des indicateurs sur des critères variés.</p>
+
+<p v-click>Vous pouvez également enregistrer une session pour mesurer la performance sur une navigation plus complète.</p>
+
+
+<a v-click mbs-15 inline-block href="https://www.mydigitalschool.com/" target="_blank">Demonstration</a>
+
+<SlideFooter/>
+
+---
+layout: image-left
+image: code.jpg
+transition: slide-up
+---
+
+<h1>Conclusion</h1>
+
+<p>Les outils de développement sont indispensables pour <b>analyser et comprendre ce qui se passe dans le navigateur</b> lorsque l'application est exécutée.</p>
+
+<p>ils vous donnent également de précieuses indications sur ce que le serveur vous envoie via les requêtes <b>HTTP</b>.</p>
+
+<p>Ils sont très complets et tous les onglets ne sont pas utiles à tous les développeurs, <b>mais il est important de les connaitre</b>.</p>
+
+
+<div @click="$slidev.nav.next" mbs-25 text-end text-primary cursor-pointer>
+  Suite de la formation <carbon-arrow-right />
+</div>
+
+
+<SlideFooter/>

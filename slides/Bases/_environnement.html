@@ -15,9 +15,11 @@ transition: slide-up
 
 <h1>Qu'est ce qu'une application Web ? </h1>
 
-<p>Une application Web est un programme informatique conçu pour être exécuté par un navigateur internet. Il peux s'agir d'un site vitrine simple, d'une site e-commerce plus complexe, d'une application mobile ou d'un outils de gestion d'entreprise par exemple.</p>
+<div mbs-10><b>Une application Web est un programme informatique conçu pour être exécuté par un navigateur internet.</b></div>
 
-<p>Les applications Web sont en général composées de 2 parties bien distinctes : </p>
+<p v-click>Il peut s'agir d'un simple site internet, d'une site e-commerce plus complexe, d'une application mobile ou d'un outil de gestion d'entreprise par exemple.</p>
+
+<p v-click>Les applications Web sont en général composées de 2 parties bien distinctes : </p>
 
 <SlideFooter/>
 
@@ -32,13 +34,39 @@ transition: slide-up
 <div flex gap-10>
 <div>
   <p v-click><u block>C'est tout ce que l'utilisateur voit :</u> Le design, les animations, les graphiques, etc.</p>
-  <p v-click>Avec la montée en puissances des frameworks JS, de plus en plus de tâches sont confiées au Front-End pour des apllications plus rapide et plus fluides mais toujours plus gourmandes en ressources.</p>
-  <p v-click>Les languages employés côté Front-End sont : <b>HTML</b>, <b>CSS</b> ET <b>JavaScript</b>.</p>
+  <p v-click>Depuis l'arrivée des <b>frameworks JS</b>, de plus en plus de tâches sont confiées au <b>Front-End</b> pour des apllications plus rapide et plus fluides mais toujours plus complexes et gourmandes en ressources.</p>
   <p v-click>Le développeur Front-End à également la responsabilité du <b>SEO</b>, de la <b>WebPerf</b> et de l'<b>accessibilité</b>.</p>
+  <p v-click>Les languages employés côté Front-End sont : <b>HTML</b>, <b>CSS</b> ET <b>JavaScript</b>.</p>
   <Alert v-click type="warning" title="Attention !" text="Quels que soient les technologies utilisées pour le développement, le code devra être compilé afin d'être compris et interprétés par les navigateurs Web !"/>
 </div>
 
-<img v-after shrink-0 block src="/front-end.jpg" alt="Front-End" width="300px">
+<img shrink-0 block object-contain object-left-top src="/front-end.jpg" alt="Front-End" width="300px" />
+</div>
+
+<SlideFooter/>
+
+---
+layout: default
+transition: slide-up
+---
+
+<h1>Le Front-End </h1>
+
+<img block mbs-5 mx-auto object-contain object-left-top src="/lego.gif" alt="" width="80%" />
+
+<div mx-auto flex gap-2 justify-around style="width: 80%;">
+  <div text-center>
+    <b text-primary>HTML</b>
+    <span block text-balance>C'est la structure de la page: <u><b>le squelette.</b></u></span>
+  </div>
+  <div text-center>
+    <b text-primary>CSS</b>
+    <span block text-balance>C'est l'apparence de la page : <u><b>la peau.</b></u></span>
+  </div>
+  <div text-center>
+    <b text-primary>JavaScript</b>
+    <span block text-balance>Ce sont interactions et les animations : <u><b>les muscles.</b></u></span>
+  </div>
 </div>
 
 <SlideFooter/>
@@ -55,12 +83,11 @@ transition: slide-up
 <div flex gap-10>
 <div>
   <p v-click><u block>C'est tout ce que l'utilisateur ne voit pas :</u> Les requêtes vers la ou les bases de données, les API, l'authentification, etc.</p>
-  <p v-click>Les utilisateurs n'interviennent pas directement sur le code Back-End, mais leurs actions peuvent déclencher des appels vers le Back.</p>
-  <p v-click></p>
-  <Alert v-click type="information" title="Important !" text="Contrairement au Front-End, il n'y a aucune limitation de language pour le développement Back-End puisque le code sera exécuté par le serveur : **NodeJS**, **PHP**, **Java**, **.Net**, **C#**, **Python**, **Ruby**, **etc...**" />
+  <p v-click>Les utilisateurs ne peuvent pas voir ou interragir directement avec le code qui est exécuté sur le serveur. <br>En revanche, leurs actions sur la page peuvent déclencher des actions qui seront gérés par le <b>Back-End</b> comme un formulaire d'inscription par exemple.</p>
+  <Alert v-click type="information" title="Important !" text="Contrairement au **Front-End**, il n'y a aucune limitation de language pour le développement **Back-End** puisque le code sera exécuté par le serveur : **NodeJS**, **PHP**, **Java**, **.Net**, **C#**, **Python**, **Ruby**, **etc...**" />
 </div>
 
-<img v-after shrink-0 block src="/back-end.jpg" alt="Front-End" width="300px">
+<img shrink-0 block object-contain object-left-top src="/back-end.jpg" alt="Front-End" width="300px" />
 </div>
 
 <SlideFooter/>
@@ -78,16 +105,16 @@ transition: slide-up
 <div grid grid-cols-2 gap-2 items-center>
   <div v-click is-full>
     <h2 text-center text-primary>Front-End</h2>
-    <p>Le Front-End est responsable de <b>l'expérience utilisateur</b>. Il doit proposer des interfaces responsives, performantes et accessibles.</p>
+    <p>Le <b>Front-End</b> est responsable de <b>l'expérience utilisateur</b>. Il doit proposer des interfaces responsives, performantes et accessibles.</p>
   </div>
   <div v-click is-full>
     <h2 text-center text-primary>Back-End</h2>
-    <p>Le Back-End est responsable de la qualité de la donnée qui sera affichée au client, de la rapidité des temps de réponse, de la sécutité, etc.</p>
+    <p>Le <b>Back-End</b> est responsable de la qualité de la donnée qui sera affichée au client, de la rapidité des temps de réponse, de la sécutité, etc.</p>
   </div>
 </div>
 
 <div v-click flex>
-  <Alert type="information" title="Important !" text="Les deux sont aussi indispendsables l'un que l'autre au bon fonctionnement d'une applicaiton Web et se doivent de communiquer entre eux de manière efficace."/>
+  <Alert type="information" title="Important !" text="Les deux sont aussi indispensables l'un que l'autre au bon fonctionnement d'une applicaiton Web et doivent de communiquer entre eux de manière efficace pour fonctionner."/>
 </div>
 
 <SlideFooter/>
@@ -101,9 +128,9 @@ transition: slide-up
 
 <h1>En résumé</h1>
 
-<p>Bien que souvent, le <b>Front-End</b> et le <b>Back-End</b> soit tous les deux au sein du même projet (un seul dépot pour toute la code base), Il est de plus en plus fréquent qu'il soit séparés et gérés par des équipes totalement différentes.</p>
+<p>Bien que souvent, le <b>Front-End</b> et le <b>Back-End</b> cohabitent tous les deux au sein du même projet (un seul dépot pour toute la code base), Il est de plus en plus fréquent qu'il soit séparés et gérés par des équipes totalement différentes.</p>
 
-<p v-click>Ainsi, un site web peut tout à fait avoir un <b>Front-End</b> qui se connecte à un ou plusieurs <b>Back-End</b> via des <b>API</b>, ou qu'un meme <b>Back-End</b> serve plusieurs <b>Front-End</b> différents.</p>
+<p v-click>Ainsi, une application web peut tout à fait avoir un <b>Front-End</b> qui se connecte à un ou plusieurs <b>Back-End</b> via des <b>API</b>, ou qu'un même <b>Back-End</b> serve plusieurs <b>Front-End</b> différents.</p>
 
 <p v-click>On parle alors d'architecture <b>M.A.C.H</b> pour <b>M</b>icroservices, <b>A</b>PI, <b>C</b>loud et <b>H</b>eadless : Au lieu de créer une grosse application monolythique, on va créer plusieurs petites briques indépendantes.</p>
 
@@ -123,15 +150,15 @@ transition: slide-up
 
 <ul mis-10 mbs->
   <ListItem label="Un utilisateur tape une recherche sur le site de **Google**."/>
-  <ListItem label="Lorsqu'il appuie sur entrée, un requête est envoyée au serveur de **Google**"/>
-  <ListItem label="En plus de la recherche, la requête va contenir des informations sur l'utilisateur (langue, géoloc, etc.)"/>
-  <ListItem label="Le serveur va chercher la réponse dans ses différentes bases de données"/>
-  <ListItem label="Puis il va compiler toutes ces données pour formuler une réponse qu'il retourne au client"/>
+  <ListItem label="Lorsqu'il appuie sur entrée, un requête est envoyée au serveur de **Google**."/>
+  <ListItem label="En plus de la recherche, la requête va contenir des informations sur l'utilisateur (langue, géoloc, etc.)."/>
+  <ListItem label="Le serveur va chercher la réponse dans ses différentes bases de données."/>
+  <ListItem label="Puis il va compiler toutes ces données pour formuler une réponse qu'il retourne au client."/>
   <ListItem label="Le client affiche la réponse qu'il à reçu."/>
 </ul>
 
 <div v-click mbs-5>
-  <Alert type="information" title="Bon à savoir !" text="Une page web est constituée de plusieurs éléments distants comme des **images**, des **polices**, des fichiers **CSS** et **JS**, etc. Pour chacun de ces éléments une requête est envoyée à un ou plusieurs serveurs.<br/>Votre navigateur envoie constament un grand nombre de requêtes lors de son utilisation."/>
+  <Alert type="information" title="Bon à savoir !" text="Une page web est constituée de plusieurs éléments distants comme des **images**, des **polices**, des fichiers **CSS** et **JS**, etc.<br/>Pour chacun de ces éléments une requête est envoyée à un ou plusieurs serveurs.<br/>Votre navigateur envoie constament un grand nombre de requêtes lors de la navigation."/>
 </div>
 
 <SlideFooter/>
@@ -166,7 +193,7 @@ transition: slide-up
 
 <h1>Structure d’une requête HTTP</h1>
 
-<p>Une requête HTTP est composée de plusieurs éléments :</p>
+<p>Une requête <b>HTTP</b> est composée de plusieurs éléments :</p>
 
 <ol mbs-5 mis-5>
   <li v-click mbs-5 flex flex-col>
@@ -225,7 +252,7 @@ transition: slide-up
 
 <h1>Structute d'une réponse HTTP</h1>
 
-<p>Une réponse HTTP comprend :</p>
+<p>Une réponse <b>HTTP</b> comprend :</p>
 
 <ol mbs-5 mis-5>
   <li v-click mbs-5 flex flex-col>
@@ -262,12 +289,12 @@ transition: slide-up
 <ul>
   <li v-click mbs-5 flex flex-col>
     <b class="-mis-5">1xx : Information</b>
-    <span><kbd>100 Continue</kbd> : La requette peut continuer.</span>
+    <span><kbd>100 Continue</kbd> : La requête peut continuer.</span>
   </li>
 
   <li v-click mbs-5 flex flex-col>
     <b class="-mis-5">2xx : Succès</b>
-    <span><kbd>200 OK</kbd> : La requette à réussie.</span>
+    <span><kbd>200 OK</kbd> : La requête à réussie.</span>
     <span><kbd>201 Created</kbd> : La ressource à été créée.</span>
   </li>
 
@@ -282,7 +309,7 @@ transition: slide-up
 <ul>
   <li v-click mbs-5 flex flex-col>
     <b class="-mis-5">4xx : Erreurs côté client</b>
-    <span><kbd>400 Bad Request</kbd> : La requette est mal formulée.</span>
+    <span><kbd>400 Bad Request</kbd> : La requête est mal formulée.</span>
     <span><kbd>401 Unauthorized</kbd> : L'authentification est nécessaire.</span>
     <span><kbd>404 Not Found</kbd> : La ressource demandée est introuvable.</span>
   </li>
@@ -318,8 +345,8 @@ transition: slide-up
   <li v-click mbe-3>
     <b>HTTP/1.0 <small>(1996)</small></b>
     <ul mis-5>
-      <li>Support des en-têtes pour inclure des métadonnées (comme Content-Type)</li>
-      <li>Introduction des codes de statut (ex. : 200, 404).</li>
+      <li>Support des en-têtes pour inclure des métadonnées (comme <kbd>Content-Type</kbd> )</li>
+      <li>Introduction des codes de statut (<kbd>200</kbd>, <kbd>404</kbd>, etc. ).</li>
       <li>Chaque requête ouvre une nouvelle connexion.</li>
     </ul>
   </li>
@@ -370,23 +397,45 @@ transition: slide-up
 
 ---
 layout: default
-transition: slide-left
+transition: slide-up
 ---
 
 <h1>La sécurité avec HTTPS</h1>
 
-<p><b>HTTPS</b> (HyperText Transfer Protocol Secure) ajoute une couche de sécurité à <b>HTTP</b> grâce au chiffrement des données via <kbd>TLS/SSL</kbd>.</p>
+<p><b>HTTPS</b> (HyperText Transfer Protocol Secure) ajoute une couche de sécurité à <b>HTTP</b> grâce au chiffrement des données.</p>
 
 <p v-click>Les connexions <b>HTTPS</b> reposent sur un certificat de chiffrement et protègent contre les attaques de type interception <i>(man-in-the-middle)</i>. Seuls le <b>client</b> et le <b>serveur</b> connaissent la clé qui permet de déchiffrer les données.</p>
 
-<p v-after><b>HTTPS</b> garantie m'intégrité et la confidentialité des données échangées</p>
+<p v-after><b>HTTPS</b> garantie l'intégrité et la confidentialité des données échangées</p>
 
 <div v-click flex mbs-10>
-  <Alert type="danger" title="Attention !" text="**HTTPS** est devenu la norme sur internet. 99% des sites utilisent ce protocole sécurisé et les navigateurs vous mettrons en garde si vous tentez d'accéder à un site en **HTTP**."/>
+  <Alert type="danger" title="Attention !" text="**HTTPS** est devenu la norme sur internet. 99% des sites utilisent ce protocole sécurisé et les navigateurs vous mettrons en garde si vous tentez d'accéder à un site via une URL non sécurisée en **HTTP**."/>
 </div>
 
 <div v-click flex mbs-5>
-  <Alert type="idea" title="Astuce !" text="Pour s'assurer que vous êtes biens sur un site sécurisé, pensez à vérifier l'url complète, elle doit commencer par <kbd>https://</kbd>. <br/>Un clique sur l'icone vous donnera des informations sur le protocole utilisé."/>
+  <Alert type="idea" title="Astuce !" text="Pour s'assurer que vous êtes bien sur un site sécurisé, pensez à vérifier l'url complète, elle doit commencer par <kbd>https://</kbd>. <br/>Un clique sur l'icone vous donnera également des informations sur le protocole utilisé."/>
 </div>
+
+<SlideFooter/>
+
+
+---
+layout: default
+transition: slide-left
+---
+
+<h1>Les autres protocoles</h1>
+
+<p>En dehors de <b>HTTP</b>, plusieurs autres protocoles jouent un rôle clé dans le fonctionnement d'Internet et des applications réseau :</p>
+
+<ul mis-5>
+  <ListItem label="<kbd>FTP</kbd> **(File Transfer Protocol)** Utilisé pour transférer des fichiers entre un client et un serveur."/>
+  <ListItem label="<kbd>SFTP</kbd> **(Secure File Transfer Protocol)** Une version sécurisée de **FTP**"/>
+  <ListItem label="<kbd>SMTP</kbd> **(Simple Mail Transfer Protocol)** Utilisé pour envoyer des e-mails."/>
+  <ListItem label="<kbd>IMAP</kbd> **(Internet Message Access Protocol)** Permet de recevoir des e-mails."/>
+  <ListItem label="<kbd>SSH</kbd> **(Secure Shell)** Permet une gestion et une connexion sécurisées à distance à un serveur."/>
+  <ListItem label="<kbd>WebSocket</kbd> Permet une communication bidirectionnelle et en temps réel entre un navigateur et un serveur, utilisé pour des applications comme les chats et les jeux en ligne."/>
+  <ListItem label="Etc..."/>
+</ul>
 
 <SlideFooter/>
