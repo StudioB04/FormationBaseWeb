@@ -41,17 +41,33 @@ src: ./slides/accueil.html
 
 # <span v-mark.red="3"><code>v-mark</code> directive</span>
 
+
 --- 
-title: Introduction
-src: ./slides/Introduction/index.html
+title: Programme
+src: ./slides/programme.html
 ---
 
 --- 
-title: Programme jour 1
-src: ./slides/Programme/jour-1.html
+title: Introduction
+src: ./slides/moi.html
+---
+
+--- 
+title: L'environnement Web
+src: ./slides/environnement.html
+---
+
+--- 
+title: L'environnement Web
+src: ./slides/devTools.html
+---
+
+--- 
+title: Le projet
+src: ./slides/projet.html
 ---
 
 --- 
 title: Les bases
-src: ./slides/Bases/index.html
+src: ./slides/conclusion.html
 ---

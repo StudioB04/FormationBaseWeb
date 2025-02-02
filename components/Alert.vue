@@ -42,7 +42,8 @@
     }
 
     div * {
-      line-height: 1.35;
+      line-height: 1.25;
+      font-size: .9rem;
     }
   }
 

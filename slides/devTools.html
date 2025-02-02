@@ -4,7 +4,7 @@ transition: slide-up
 class: text-center
 ---
 
-<h1 class="!text-6xl">3. Les outils de développement</h1>
+<h1 class="!text-6xl">2. Les outils de développement</h1>
 
 <SlideFooter/>
 
@@ -15,17 +15,23 @@ transition: slide-up
 
 <h1>Les outils de développement</h1>
 
-<p>En tant que développeur, vous devrez être capable de comprendre et d'analyser le fonctionnement d'un application Web pour déceler les bugs et les corriger.</p>
+<p>En tant que développeur, vous devrez être capable de comprendre et d'analyser le fonctionnement d'une application Web pour déceler les bugs et les corriger.</p>
 
-<p v-click>Les navigateurs embarquent des outils de développement pour aider les développeurs à diagnostiquer et optimiser leurs applications web. Le navigateur le plus utilisé et le plus pratique pour le développement est <b>Google Chrome</b> grâce aux <b>DevTools</b>.</p>
+<div v-click flex gap-10 items-center>
+  <p>Les navigateurs embarquent des outils de développement pour aider les développeurs à diagnostiquer et optimiser leurs applications Web. Le navigateur le plus utilisé et le plus pratique pour le développement est <b>Google Chrome</b> grâce aux <b>DevTools</b>.</p>
+  <img v-after src="/logos/chrome.svg" alt="" w-20 shrink-0>
+</div>
 
-<div v-click mbs-10>
-  <p>Pour accéder au <b>DevTools</b>, utilisez la combinaison de touche suivante :</p>
-  
-  <ul mis-5>
+
+
+<div v-click flex mbs-10>
+ <Alert type="idea" title="Pour ouvrir les DevTools" text="<div flex flex-col gap-5 pbs-3>
+  <ul mis-5 flex flex-col gap-2>
     <li><b>sur Windows ou Linux :</b> <kbd>Ctrl + Shift + I</kbd> ou <kbd>F12</kbd> </li>
     <li><b>sur Mac :</b> <kbd>Cmd + Option + I</kbd> </li>
   </ul>
+
+ </div>"/>
 </div>
 
 <SlideFooter/>
@@ -38,7 +44,7 @@ transition: slide-up
 <h1>Vue d'ensemble des onglets des DevTools</h1>
 
 <ol>
-  <ListItem label="**Elements** : Explorer et modifier le DOM et le CSS <u>en direct</u>."/>
+  <ListItem label="**Elements** : Explorer et modifier le **DOM** et le **CSS** <u>en direct</u>."/>
   <ListItem label="**Console** : Permet d'exécuter du code **JavaScript**, afficher des messages et des logs" />
   <ListItem label="**Sources** : Parcourir tous les fichiers sources qui constituent la page en cours." />
   <ListItem label="**Network** : Surveiller les requêtes réseau **(HTTP)** et leur performance." />
@@ -76,7 +82,7 @@ transition: slide-up
 <Arrow v-click="1" x1="300" y1="190" x2="500" y2="150" color="var(--primary-500)" />
 <Arrow v-click="2" x1="300" y1="360" x2="500" y2="430" color="var(--primary-500)" />
 
-<a v-click mbs-10 inline-block href="https://www.mydigitalschool.com/" target="_blank">Demonstration</a>
+<a v-click mbs-10 inline-block href="https://www.mydigitalschool.com/" target="_blank">Démonstration</a>
 
 <SlideFooter/>
 
@@ -92,7 +98,7 @@ transition: slide-up
 
 <p v-click>Les messages sont triés en fonction de leur types : <b>Messages</b>, <b>Erreurs</b>, <b>Warnings</b>, <b>Info</b> et <b>Verbose</b>.</p>
 
-<a v-click mbs-10 inline-block href="https://www.mydigitalschool.com/" target="_blank">Demonstration</a>
+<a v-click mbs-10 inline-block href="https://www.mydigitalschool.com/" target="_blank">Démonstration</a>
 
 <SlideFooter/>
 
@@ -109,7 +115,7 @@ transition: slide-up
 <p v-click>Il est possible de trier les requêtes par type, et de voir le détail pour chaque requête (la durée, le statut, la taille de la resource, etc.).</p>
 
 
-<a v-click mbs-30 inline-block href="https://www.mydigitalschool.com/" target="_blank">Demonstration</a>
+<a v-click mbs-30 inline-block href="https://www.mydigitalschool.com/" target="_blank">Démonstration</a>
 
 <SlideFooter/>
 
@@ -130,7 +136,7 @@ transition: slide-up
 <Arrow v-click="1" x1="320" y1="310" x2="500" y2="390" color="var(--primary-500)" />
 
 
-<a v-click mbs-20 inline-block href="https://www.mydigitalschool.com/" target="_blank">Demonstration</a>
+<a v-click mbs-20 inline-block href="https://www.mydigitalschool.com/" target="_blank">Démonstration</a>
 
 <SlideFooter/>
 
@@ -149,7 +155,7 @@ transition: slide-up
 <p v-click>Vous pouvez également enregistrer une session pour mesurer la performance sur une navigation plus complète.</p>
 
 
-<a v-click mbs-15 inline-block href="https://www.mydigitalschool.com/" target="_blank">Demonstration</a>
+<a v-click mbs-15 inline-block href="https://www.mydigitalschool.com/" target="_blank">Démonstration</a>
 
 <SlideFooter/>
 

@@ -4,7 +4,7 @@ transition: slide-up
 class: text-center
 ---
 
-<h1 class="!text-6xl">2. L'environnement Web</h1>
+<h1 class="!text-6xl">1. L'environnement Web</h1>
 
 <SlideFooter/>
 
@@ -31,17 +31,17 @@ transition: slide-up
 <h1>Le Front-End </h1>
 <h2 text-light>ou "côté client"</h2>
 
-<div flex gap-10>
+<div flex gap-10 items-end>
 <div>
   <p v-click><u block>C'est tout ce que l'utilisateur voit :</u> Le design, les animations, les graphiques, etc.</p>
-  <p v-click>Depuis l'arrivée des <b>frameworks JS</b>, de plus en plus de tâches sont confiées au <b>Front-End</b> pour des apllications plus rapide et plus fluides mais toujours plus complexes et gourmandes en ressources.</p>
-  <p v-click>Le développeur Front-End à également la responsabilité du <b>SEO</b>, de la <b>WebPerf</b> et de l'<b>accessibilité</b>.</p>
-  <p v-click>Les languages employés côté Front-End sont : <b>HTML</b>, <b>CSS</b> ET <b>JavaScript</b>.</p>
-  <Alert v-click type="warning" title="Attention !" text="Quels que soient les technologies utilisées pour le développement, le code devra être compilé afin d'être compris et interprétés par les navigateurs Web !"/>
+  <p v-click>Depuis l'arrivée des <b>frameworks JS</b>, de plus en plus de tâches sont confiées au <b>Front-End</b> pour des aplications plus rapide et plus fluides mais toujours plus complexes et gourmandes en ressources.</p>
+  <p v-click>Le développeur Front-End à également en partie la responsabilité du <b>SEO</b>, de la <b>WebPerf</b> et de l'<b>accessibilité</b>.</p>
+  <Alert v-click type="warning" title="Attention !" text="Quelles que soient les technologies utilisées pour le développement, le code devra être compilé afin d'être compris et interprétés par les navigateurs Web ! Les <u>seuls</u> langages que le navigateur comprends sont **HTML**, **CSS** et **JavaScript**."/>
 </div>
 
 <img shrink-0 block object-contain object-left-top src="/front-end.jpg" alt="Front-End" width="300px" />
 </div>
+
 
 <SlideFooter/>
 
@@ -56,15 +56,15 @@ transition: slide-up
 
 <div mx-auto flex gap-2 justify-around style="width: 80%;">
   <div text-center>
-    <b text-primary>HTML</b>
+    <h2 text-primary>HTML</h2>
     <span block text-balance>C'est la structure de la page: <u><b>le squelette.</b></u></span>
   </div>
   <div text-center>
-    <b text-primary>CSS</b>
+    <h2 text-primary>CSS</h2>
     <span block text-balance>C'est l'apparence de la page : <u><b>la peau.</b></u></span>
   </div>
   <div text-center>
-    <b text-primary>JavaScript</b>
+    <h2 text-primary>JavaScript</h2>
     <span block text-balance>Ce sont interactions et les animations : <u><b>les muscles.</b></u></span>
   </div>
 </div>
@@ -80,10 +80,11 @@ transition: slide-up
 <h1>Le Back-End </h1>
 <h2 text-light>ou "côté serveur"</h2>
 
-<div flex gap-10>
+<div flex gap-10 items-end>
 <div>
-  <p v-click><u block>C'est tout ce que l'utilisateur ne voit pas :</u> Les requêtes vers la ou les bases de données, les API, l'authentification, etc.</p>
-  <p v-click>Les utilisateurs ne peuvent pas voir ou interragir directement avec le code qui est exécuté sur le serveur. <br>En revanche, leurs actions sur la page peuvent déclencher des actions qui seront gérés par le <b>Back-End</b> comme un formulaire d'inscription par exemple.</p>
+  <p v-click><u block>C'est tout ce que l'utilisateur ne voit pas :</u> Les requêtes vers la base de données, les API, l'authentification, etc.</p>
+  <p v-click>Les utilisateurs ne peuvent pas voir ou interragir directement avec le code puisqu'il est exécuté sur le serveur.</p>
+  <p v-click>En revanche, leurs actions sur la page peuvent déclencher des actions qui seront gérés par le <b>Back-End</b> comme un formulaire d'inscription par exemple.</p>
   <Alert v-click type="information" title="Important !" text="Contrairement au **Front-End**, il n'y a aucune limitation de language pour le développement **Back-End** puisque le code sera exécuté par le serveur : **NodeJS**, **PHP**, **Java**, **.Net**, **C#**, **Python**, **Ruby**, **etc...**" />
 </div>
 
@@ -105,16 +106,16 @@ transition: slide-up
 <div grid grid-cols-2 gap-2 items-center>
   <div v-click is-full>
     <h2 text-center text-primary>Front-End</h2>
-    <p>Le <b>Front-End</b> est responsable de <b>l'expérience utilisateur</b>. Il doit proposer des interfaces responsives, performantes et accessibles.</p>
+    <p>Le <b>Front-End</b> est responsable de <b>l'expérience utilisateur</b>. Il doit proposer des interfaces <u>responsives</u>, <u>performantes</u> et <u>accessibles</u>.</p>
   </div>
   <div v-click is-full>
     <h2 text-center text-primary>Back-End</h2>
-    <p>Le <b>Back-End</b> est responsable de la qualité de la donnée qui sera affichée au client, de la rapidité des temps de réponse, de la sécutité, etc.</p>
+    <p>Le <b>Back-End</b> est responsable de la <u>qualité de la donnée</u> qui sera affichée au client, de <u>la rapidité</u> des temps de réponse, de <u>la sécutité</u>, etc.</p>
   </div>
 </div>
 
 <div v-click flex>
-  <Alert type="information" title="Important !" text="Les deux sont aussi indispensables l'un que l'autre au bon fonctionnement d'une applicaiton Web et doivent de communiquer entre eux de manière efficace pour fonctionner."/>
+  <Alert type="information" title="Important !" text="Les deux sont aussi indispensables l'un que l'autre au bon fonctionnement d'une application Web et doivent communiquer entre eux de manière efficace pour que l'application fonctionne."/>
 </div>
 
 <SlideFooter/>
@@ -130,7 +131,7 @@ transition: slide-up
 
 <p>Bien que souvent, le <b>Front-End</b> et le <b>Back-End</b> cohabitent tous les deux au sein du même projet (un seul dépot pour toute la code base), Il est de plus en plus fréquent qu'il soit séparés et gérés par des équipes totalement différentes.</p>
 
-<p v-click>Ainsi, une application web peut tout à fait avoir un <b>Front-End</b> qui se connecte à un ou plusieurs <b>Back-End</b> via des <b>API</b>, ou qu'un même <b>Back-End</b> serve plusieurs <b>Front-End</b> différents.</p>
+<p v-click>Ainsi, une application Web peut tout à fait avoir un <b>Front-End</b> qui se connecte à un ou plusieurs <b>Back-End</b> via des <b>API</b>, ou qu'un même <b>Back-End</b> serve plusieurs <b>Front-End</b> différents.</p>
 
 <p v-click>On parle alors d'architecture <b>M.A.C.H</b> pour <b>M</b>icroservices, <b>A</b>PI, <b>C</b>loud et <b>H</b>eadless : Au lieu de créer une grosse application monolythique, on va créer plusieurs petites briques indépendantes.</p>
 
@@ -144,7 +145,7 @@ transition: slide-up
 
 <h1>Les protocoles</h1>
 
-<p>Comme on l'a vu précédemment, pour qu'une application web fonctionne,<br/>il faut que le <b>Front-End</b> et le <b>Back-End</b> puissent communiquer.</p>
+<p>Comme on l'a vu précédemment, pour qu'une application Web fonctionne,<br/>il faut que le <b>Front-End</b> et le <b>Back-End</b> puissent communiquer.</p>
 
 <b text-xl>Voici un exemple concret :</b>
 
@@ -158,7 +159,7 @@ transition: slide-up
 </ul>
 
 <div v-click mbs-5>
-  <Alert type="information" title="Bon à savoir !" text="Une page web est constituée de plusieurs éléments distants comme des **images**, des **polices**, des fichiers **CSS** et **JS**, etc.<br/>Pour chacun de ces éléments une requête est envoyée à un ou plusieurs serveurs.<br/>Votre navigateur envoie constament un grand nombre de requêtes lors de la navigation."/>
+  <Alert type="information" title="Bon à savoir !" text="Une page Web est constituée de plusieurs éléments distants comme des **images**, des **polices**, des fichiers **CSS** et **JS**, etc.<br/>Pour chacun de ces éléments une requête est envoyée à un ou plusieurs serveurs.<br/>Votre navigateur envoie constament un grand nombre de requêtes lors de la navigation."/>
 </div>
 
 <SlideFooter/>
@@ -170,9 +171,9 @@ transition: slide-up
 ---
 
 <h1>Le protocole HTTP</h1>
-<h2 text-light>(HyperText Transfer Protocol)</h2>
+<h2 text-lighter>(HyperText Transfer Protocol)</h2>
 
-<p>Le <b>HTTP</b> est l’un des protocoles les plus fondamentaux et les plus utilisés dans le web. Il permet la communication entre un <b>client</b> (généralement un navigateur) et un <b>serveur web</b>.</p>
+<p>Le <b>HTTP</b> est l’un des protocoles les plus fondamentaux et les plus utilisés dans le Web. Il permet la communication entre un <b>client</b> (généralement un navigateur) et un <b>serveur Web</b>.</p>
 
 <div mbs-10>
   <p v-click><b>HTTP</b> est un protocole basé sur un modèle <b>requête-réponse</b> :</p>
@@ -182,6 +183,10 @@ transition: slide-up
   <li v-click><b>Requête</b> : Le <b>client</b> envoie une requête au serveur.</li>
   <li v-click><b>Réponse</b> : Le <b>serveur</b> traite la requête et renvoie une réponse, souvent sous forme de page <b>HTML</b>, de donnée au format <b>JSON</b>, ou de <b>fichier</b>.</li>
 </ol>
+
+<div v-click mbs-5>
+  <Alert type="idea" title="Le saviez-vous ?" text="C'est la création du protocole HTTP en 1991 qui a permis l'invention d'Internet tel qu'on le connais aujourd'hui."/>
+</div>
 
 <SlideFooter/>
 
@@ -392,7 +397,7 @@ transition: slide-up
       <li>Basé sur <kbd>UDP</kbd> au lieu de <kbd>TCP</kbd>.</li>
       <li>Réduction des temps de latence grâce à une connexion plus rapide et résiliente.</li>
       <li>Conçu pour améliorer les performances des applications en temps réel (streaming, jeux, etc.).</li>
-      <li>Uniquement en <b>HTTPS</b></li>
+      <li>Uniquement en <b>HTTPs</b></li>
     </ul>
   </li>
 </ol>
@@ -405,16 +410,16 @@ layout: default
 transition: slide-up
 ---
 
-<h1>La sécurité avec HTTPS</h1>
+<h1>La sécurité avec HTTPs</h1>
 
-<p><b>HTTPS</b> (HyperText Transfer Protocol Secure) ajoute une couche de sécurité à <b>HTTP</b> grâce au chiffrement des données.</p>
+<p><b>HTTPs</b> (HyperText Transfer Protocol Secure) ajoute une couche de sécurité à <b>HTTP</b> grâce au chiffrement des données.</p>
 
-<p v-click>Les connexions <b>HTTPS</b> reposent sur un certificat de chiffrement et protègent contre les attaques de type interception <i>(man-in-the-middle)</i>. Seuls le <b>client</b> et le <b>serveur</b> connaissent la clé qui permet de déchiffrer les données.</p>
+<p v-click>Les connexions <b>HTTPs</b> reposent sur un certificat de chiffrement et protègent contre les attaques de type interception <i>(man-in-the-middle)</i>. Seuls le <b>client</b> et le <b>serveur</b> connaissent la clé qui permet de déchiffrer les données.</p>
 
-<p v-after><b>HTTPS</b> garantie l'intégrité et la confidentialité des données échangées</p>
+<p v-after><b>HTTPs</b> garantie l'intégrité et la confidentialité des données échangées</p>
 
 <div v-click flex mbs-10>
-  <Alert type="danger" title="Attention !" text="**HTTPS** est devenu la norme sur internet. 99% des sites utilisent ce protocole sécurisé et les navigateurs vous mettrons en garde si vous tentez d'accéder à un site via une URL non sécurisée en **HTTP**."/>
+  <Alert type="danger" title="Attention !" text="**HTTPs** est devenu la norme sur internet. 99% des sites utilisent ce protocole sécurisé et les navigateurs vous mettrons en garde si vous tentez d'accéder à un site via une URL non sécurisée en **HTTP**."/>
 </div>
 
 <div v-click flex mbs-5>

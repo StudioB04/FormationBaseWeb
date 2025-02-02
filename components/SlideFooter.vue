@@ -42,7 +42,7 @@ const year = today.getFullYear();
         <img src="/logos/studiob04.svg" alt="" class="w-4" />
         <span>StudioB04</span>
         <small>|</small>
-        <span>Bachelor 3 Développeur web - Application web</span>
+        <span>Développeur Web - Les bases</span>
         <small>|</small>
         <span>{{ day }} {{ date }} {{ month }} {{ year }} </span>
         <span class="mis-auto">
