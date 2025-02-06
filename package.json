@@ -1,5 +1,6 @@
 {
   "name": "formation_base_web",
+  "title": "Les Bases",
   "type": "module",
   "private": true,
   "scripts": {
