@@ -17,7 +17,7 @@ transition: slide-up
 
 <div mbs-10><b>Une application Web est un programme informatique conçu pour être exécuté par un navigateur internet.</b></div>
 
-<p v-click>Il peut s'agir d'un simple site internet, d'une site e-commerce plus complexe, d'une application mobile ou d'un outil de gestion d'entreprise par exemple.</p>
+<p v-click>Il peut s'agir d'un simple site internet, d'un site plus complexe comme un e-commerce, d'une application mobile ou d'un outil de gestion d'entreprise par exemple.</p>
 
 <p v-click>Les applications Web sont en général composées de 2 parties bien distinctes : </p>
 
@@ -36,7 +36,7 @@ transition: slide-up
   <p v-click><u block>C'est tout ce que l'utilisateur voit :</u> Le design, les animations, les graphiques, etc.</p>
   <p v-click>Depuis l'arrivée des <b>frameworks JS</b>, de plus en plus de tâches sont confiées au <b>Front-End</b> pour des aplications plus rapide et plus fluides mais toujours plus complexes et gourmandes en ressources.</p>
   <p v-click>Le développeur Front-End à également en partie la responsabilité du <b>SEO</b>, de la <b>WebPerf</b> et de l'<b>accessibilité</b>.</p>
-  <Alert v-click type="warning" title="Attention !" text="Quelles que soient les technologies utilisées pour le développement, le code devra être compilé afin d'être compris et interprétés par les navigateurs Web ! Les <u>seuls</u> langages que le navigateur comprends sont **HTML**, **CSS** et **JavaScript**."/>
+  <Alert v-click type="warning" title="Attention !" text="Quelles que soient les technologies utilisées pour le développement, le code devra être compilé afin d'être compris et interprétés par les navigateurs Web ! Les <u>seuls</u> langages que le navigateur comprend sont **HTML**, **CSS** et **JavaScript**."/>
 </div>
 
 <img shrink-0 block object-contain object-left-top src="/front-end.jpg" alt="Front-End" width="300px" />
@@ -85,7 +85,7 @@ transition: slide-up
   <p v-click><u block>C'est tout ce que l'utilisateur ne voit pas :</u> Les requêtes vers la base de données, les API, l'authentification, etc.</p>
   <p v-click>Les utilisateurs ne peuvent pas voir ou interragir directement avec le code puisqu'il est exécuté sur le serveur.</p>
   <p v-click>En revanche, leurs actions sur la page peuvent déclencher des actions qui seront gérés par le <b>Back-End</b> comme un formulaire d'inscription par exemple.</p>
-  <Alert v-click type="information" title="Important !" text="Contrairement au **Front-End**, il n'y a aucune limitation de language pour le développement **Back-End** puisque le code sera exécuté par le serveur : **NodeJS**, **PHP**, **Java**, **.Net**, **C#**, **Python**, **Ruby**, **etc...**" />
+  <Alert v-click type="information" title="Important !" text="Contrairement au **Front-End**, il n'y a aucune limitation de langage pour le développement côté **Back-End** puisque le code sera exécuté par le serveur : **NodeJS**, **PHP**, **Java**, **.Net**, **C#**, **Python**, **Ruby**, **etc...**" />
 </div>
 
 <img shrink-0 block object-contain object-left-top src="/back-end.jpg" alt="Front-End" width="300px" />
@@ -110,7 +110,7 @@ transition: slide-up
   </div>
   <div v-click is-full>
     <h2 text-center text-primary>Back-End</h2>
-    <p>Le <b>Back-End</b> est responsable de la <u>qualité de la donnée</u> qui sera affichée au client, de <u>la rapidité</u> des temps de réponse, de <u>la sécutité</u>, etc.</p>
+    <p>Le <b>Back-End</b> est responsable de la <u>qualité de la donnée</u> qui sera affichée au client, de <u>la rapidité</u> des temps de réponse, de <u>la sécurité</u>, etc.</p>
   </div>
 </div>
 
@@ -145,9 +145,9 @@ transition: slide-up
 
 <h1>Les protocoles</h1>
 
-<p>Comme on l'a vu précédemment, pour qu'une application Web fonctionne,<br/>il faut que le <b>Front-End</b> et le <b>Back-End</b> puissent communiquer.</p>
+<p v-click>Comme on l'a vu précédemment, pour qu'une application Web fonctionne,<br/>il faut que le <b>Front-End</b> et le <b>Back-End</b> puissent communiquer.</p>
 
-<b text-xl>Voici un exemple concret :</b>
+<b v-after text-xl>Voici un exemple concret :</b>
 
 <ul mis-10 mbs->
   <ListItem label="Un utilisateur tape une recherche sur le site de **Google**."/>
@@ -174,6 +174,8 @@ transition: slide-up
 <h2 text-lighter>(HyperText Transfer Protocol)</h2>
 
 <p>Le <b>HTTP</b> est l’un des protocoles les plus fondamentaux et les plus utilisés dans le Web. Il permet la communication entre un <b>client</b> (généralement un navigateur) et un <b>serveur Web</b>.</p>
+
+<p>C'est ce protocole de communication qui a été utilisé dans l'exemple précédent.</p>
 
 <div mbs-10>
   <p v-click><b>HTTP</b> est un protocole basé sur un modèle <b>requête-réponse</b> :</p>
@@ -210,13 +212,13 @@ transition: slide-up
   </li>
 
   <li v-click mbs-5 flex flex-col>
-    <b class="-mis-5">L'en-têtes ou Headers</b>
+    <b class="-mis-5">Les en-têtes (Headers)</b>
     <span>Fournissent des métadonnées sur la requête (<b>la langue</b>, <b>le type de contenu</b>, <b>des informations sur l'utilisateur</b>, etc.)</span>
   </li>
 
   <li v-click mbs-5 flex flex-col>
-    <b class="-mis-5">Le Corps ou Body (optionnel)</b>
-    <span>Contient des données supplémentaires, souvent utilisées avec les méthodes comme <kbd>POST</kbd> ou <kbd>PUT</kbd></span>
+    <b class="-mis-5">Le Corps (Body, optionnel)</b>
+    <span>Peut contenir des données supplémentaires, souvent utilisées avec les méthodes comme <kbd>POST</kbd> ou <kbd>PUT</kbd></span>
   </li>
 </ol>
 
@@ -266,12 +268,12 @@ transition: slide-up
   </li>
 
   <li v-click mbs-5 flex flex-col>
-    <b class="-mis-5">L'en-têtes ou Headers</b>
+    <b class="-mis-5">Les en-têtes (Headers)</b>
     <span>Fournissent des informations sur la réponse, comme le type de contenu, la taille, ou des informations de cache. Exemple : <kbd>Content-Type: text/html; charset=UTF-8</kbd></span>
   </li>
 
   <li v-click mbs-5 flex flex-col>
-    <b class="-mis-5">Le Corps ou Body (optionnel)</b>
+    <b class="-mis-5">Le Corps (Body, optionnel)</b>
     <span>Contient les données demandées (<b>HTML</b>, <b>JSON</b>, <b>image</b>, etc.).</span>
   </li>
 </ol>
@@ -286,8 +288,7 @@ transition: slide-up
 
 <h1>Les codes de statut HTTP</h1>
 
-<p>Les codes de statut indiquent le résultat de la requête :</p>
-
+<p v-click>Les codes de statut indiquent le résultat de la requête :</p>
 
 <div flex gap-4 justify-between>
 
@@ -316,18 +317,18 @@ transition: slide-up
     <b class="-mis-5">4xx : Erreurs côté client</b>
     <span><kbd>400 Bad Request</kbd> : La requête est mal formulée.</span>
     <span><kbd>401 Unauthorized</kbd> : L'authentification est nécessaire.</span>
-    <span><kbd>404 Not Found</kbd> : La ressource demandée est introuvable.</span>
+    <span><kbd v-mark="{ at:7, color: '#f43f5e', type: 'circle' }">404 Not Found</kbd> : La ressource demandée est introuvable.</span>
   </li>
 
   <li v-click mbs-5 flex flex-col>
     <b class="-mis-5">5xx : Erreurs côté serveur</b>
     <span><kbd>500 Internal Server Error</kbd> : Erreur interne au serveur.</span>
-    <span><kbd>503 Service Unavailable</kbd> : Serveur temporairement indisponible.</span>
+    <span><kbd v-mark="{ at:7, color: '#f43f5e', type: 'circle' }">503 Service Unavailable</kbd> : Serveur temporairement indisponible.</span>
   </li>
 </ul>
 </div>
 
-<div text-right v-click>
+<div text-right v-click="8">
   <a href="https://developer.mozilla.org/fr/docs/Web/HTTP/Status/100" target="_blank">Voir tous les codes sur MDN Web Doc </a>
 </div>
 
@@ -412,7 +413,7 @@ transition: slide-up
 
 <h1>La sécurité avec HTTPs</h1>
 
-<p><b>HTTPs</b> (HyperText Transfer Protocol Secure) ajoute une couche de sécurité à <b>HTTP</b> grâce au chiffrement des données.</p>
+<p v-click><b>HTTPs</b> (HyperText Transfer Protocol Secure) ajoute une couche de sécurité à <b>HTTP</b> grâce au chiffrement des données.</p>
 
 <p v-click>Les connexions <b>HTTPs</b> reposent sur un certificat de chiffrement et protègent contre les attaques de type interception <i>(man-in-the-middle)</i>. Seuls le <b>client</b> et le <b>serveur</b> connaissent la clé qui permet de déchiffrer les données.</p>
 

@@ -71,3 +71,9 @@ src: ./slides/projet.html
 title: Les bases
 src: ./slides/conclusion.html
 ---
+
+
+--- 
+title: Merci !
+src: ./slides/fin.html
+---
