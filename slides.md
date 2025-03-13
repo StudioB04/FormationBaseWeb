@@ -41,15 +41,14 @@ src: ./slides/accueil.html
 
 # <span v-mark.red="3"><code>v-mark</code> directive</span>
 
+--- 
+title: Introduction
+src: ./slides/moi.html
+---
 
 --- 
 title: Programme
 src: ./slides/programme.html
----
-
---- 
-title: Introduction
-src: ./slides/moi.html
 ---
 
 --- 
